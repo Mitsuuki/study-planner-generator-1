@@ -1,0 +1,65 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-image: url('img/test3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>Study Plan Generator</title>
+  </head>
+  <body>
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Type a message...",
+      "botConversationDescription": "G12 - Ezekiel (Research Capstone)",
+      "botId": "30b8fc19-2aa8-4208-8131-7fa442197db7",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "30b8fc19-2aa8-4208-8131-7fa442197db7",
+      "webhookId": "eaefb9a7-1613-449d-8b4c-76627447fefe",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
